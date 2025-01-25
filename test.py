@@ -48,14 +48,14 @@ def convert_pace_to_time_format(pace_in_minutes_per_km):
     time_str = f"{minutes}:{seconds_str}"
 
     return time_str
-
-def generate_random_time_between_22_and_23():
+def generate_random_time_between_6_and_8():
     # 生成0到59之间的随机分钟数
     random_minutes = random.randint(0, 59)
-    random_hours = random.randint(6, 23)
+    # 生成6到7之间的随机小时数
+    random_hours = random.randint(6, 7)
 
     # 格式化时间为24小时制字符串
-    random_time = f"{random_hours}:{random_minutes:02d}"
+    random_time = f"{random_hours:02d}:{random_minutes:02d}"
 
     return random_time
 
